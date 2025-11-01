@@ -27,6 +27,7 @@
         --bg: #edf3ef;
         --surface: rgba(255, 255, 255, 0.92);
         --muted: #5f6f65;
+        --text-strong: #1f2922;
         --shadow: 0 30px 60px rgba(18, 72, 48, 0.14);
         --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         --font-heading: "Playfair Display", "Times New Roman", serif;
@@ -44,6 +45,7 @@
           --bg: #050807;
           --surface: rgba(18, 34, 27, 0.9);
           --muted: #b1c7ba;
+          --text-strong: #f0f9f1;
           --shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
         }
       }
@@ -307,7 +309,7 @@
 
       main > section p {
         margin: 0.75rem 0;
-        color: var(--muted);
+        color: var(--text);
       }
 
       main ul {
@@ -324,12 +326,12 @@
       .summary-card {
         background: linear-gradient(135deg, rgba(31, 138, 93, 0.16), rgba(240, 138, 82, 0.12));
         border: 1px solid rgba(18, 72, 48, 0.16);
-        color: var(--text);
+        color: var(--text-strong);
       }
 
       .summary-card p,
       .summary-card li {
-        color: rgba(31, 41, 34, 0.92);
+        color: var(--text-strong);
       }
 
       .summary-card ul {
@@ -506,12 +508,12 @@
           </div>
           <div class="brand-text">
             <h1>
-              <span class="locale-en" lang="en">Privacy Policy – Sproutly</span>
-              <span class="locale-de" lang="de">Datenschutzerklärung – Sproutly</span>
+              <span class="locale-en" lang="en">🪴 Privacy Policy – Sproutly</span>
+              <span class="locale-de" lang="de">🪴 Datenschutzerklärung – Sproutly</span>
             </h1>
             <p>
-              <span class="locale-en" lang="en">Trustworthy insights for a plant-forward routine.</span>
-              <span class="locale-de" lang="de">Verlässliche Informationen für Ihren pflanzenbasierten Alltag.</span>
+              <span class="locale-en" lang="en">Your plant-first privacy, kept right on your device.</span>
+              <span class="locale-de" lang="de">Ihre pflanzenbasierte Privatsphäre bleibt auf Ihrem Gerät.</span>
             </p>
           </div>
         </div>
@@ -538,20 +540,18 @@
         <span class="locale-de" lang="de">Inhalt</span>
       </h2>
       <ul>
-        <li><a href="#overview"><span class="locale-en" lang="en">At a Glance</span><span class="locale-de" lang="de">Auf einen Blick</span></a></li>
-        <li><a href="#responsible"><span class="locale-en" lang="en">Data Controller</span><span class="locale-de" lang="de">Verantwortliche Stelle</span></a></li>
-        <li><a href="#app-description"><span class="locale-en" lang="en">About the App</span><span class="locale-de" lang="de">Kurzbeschreibung der App</span></a></li>
-        <li><a href="#data-processing"><span class="locale-en" lang="en">Processed Data</span><span class="locale-de" lang="de">Verarbeitete Daten</span></a></li>
-        <li><a href="#storage"><span class="locale-en" lang="en">Storage &amp; Retention</span><span class="locale-de" lang="de">Speicherort &amp; -dauer</span></a></li>
-        <li><a href="#permissions"><span class="locale-en" lang="en">App Permissions</span><span class="locale-de" lang="de">Berechtigungen der App</span></a></li>
-        <li><a href="#third-parties"><span class="locale-en" lang="en">Third Parties</span><span class="locale-de" lang="de">Drittanbieter / Weitergabe</span></a></li>
-        <li><a href="#legal-basis"><span class="locale-en" lang="en">Legal Bases</span><span class="locale-de" lang="de">Rechtsgrundlagen</span></a></li>
-        <li><a href="#rights"><span class="locale-en" lang="en">Your Rights</span><span class="locale-de" lang="de">Ihre Rechte</span></a></li>
-        <li><a href="#security"><span class="locale-en" lang="en">Security</span><span class="locale-de" lang="de">Sicherheit</span></a></li>
-        <li><a href="#transfers"><span class="locale-en" lang="en">International Transfers</span><span class="locale-de" lang="de">Internationale Datentransfers</span></a></li>
-        <li><a href="#children"><span class="locale-en" lang="en">Children</span><span class="locale-de" lang="de">Kinder</span></a></li>
-        <li><a href="#changes"><span class="locale-en" lang="en">Changes</span><span class="locale-de" lang="de">Änderungen</span></a></li>
-        <li><a href="#contact"><span class="locale-en" lang="en">Contact</span><span class="locale-de" lang="de">Kontakt</span></a></li>
+        <li>
+          <a href="#overview">
+            <span class="locale-en" lang="en">At a Glance</span>
+            <span class="locale-de" lang="de">Auf einen Blick</span>
+          </a>
+        </li>
+        <li>
+          <a href="#responsible">
+            <span class="locale-en" lang="en">Controller</span>
+            <span class="locale-de" lang="de">Verantwortliche Stelle</span>
+          </a>
+        </li>
       </ul>
     </nav>
     <main id="content">
@@ -561,241 +561,52 @@
           <span class="locale-de" lang="de">Auf einen Blick</span>
         </h2>
         <p>
-          <span class="locale-en" lang="en">Sproutly was designed to keep your habits private and on your device.</span>
-          <span class="locale-de" lang="de">Sproutly wurde entwickelt, um Ihre Gewohnheiten privat und auf Ihrem Gerät zu halten.</span>
+          <span class="locale-en" lang="en">Sproutly keeps your plant-forward routine private and entirely on your device.</span>
+          <span class="locale-de" lang="de">Sproutly schützt Ihre pflanzenbasierte Routine und speichert alles ausschließlich auf Ihrem Gerät.</span>
         </p>
         <ul>
-          <li><span class="locale-en" lang="en">No account registration</span><span class="locale-de" lang="de">Keine Kontoregistrierung</span></li>
-          <li><span class="locale-en" lang="en">All data stays local on your device</span><span class="locale-de" lang="de">Alle Daten bleiben lokal auf Ihrem Gerät</span></li>
-          <li><span class="locale-en" lang="en">No cloud sync, no data sharing</span><span class="locale-de" lang="de">Keine Cloud-Synchronisation, keine Weitergabe</span></li>
-          <li><span class="locale-en" lang="en">No ads, analytics, or tracking</span><span class="locale-de" lang="de">Keine Werbung/Analytics, kein Tracking</span></li>
-          <li><span class="locale-en" lang="en">Notifications only for daily reminders</span><span class="locale-de" lang="de">Benachrichtigungen nur als tägliche Erinnerung</span></li>
+          <li>
+            <span class="locale-en" lang="en">No account registration required</span>
+            <span class="locale-de" lang="de">Keine Kontoregistrierung erforderlich</span>
+          </li>
+          <li>
+            <span class="locale-en" lang="en">All data is stored locally on your device</span>
+            <span class="locale-de" lang="de">Alle Daten werden ausschließlich lokal auf Ihrem Gerät gespeichert</span>
+          </li>
+          <li>
+            <span class="locale-en" lang="en">No cloud sync or data sharing</span>
+            <span class="locale-de" lang="de">Keine Cloud-Synchronisation oder Datenweitergabe</span>
+          </li>
+          <li>
+            <span class="locale-en" lang="en">No ads, tracking, or analytics of your usage</span>
+            <span class="locale-de" lang="de">Keine Werbung, kein Tracking, keine Analyse Ihres Nutzungsverhaltens</span>
+          </li>
+          <li>
+            <span class="locale-en" lang="en">Notifications exist purely as an optional daily reminder</span>
+            <span class="locale-de" lang="de">Benachrichtigungen dienen ausschließlich als tägliche Erinnerung</span>
+          </li>
         </ul>
       </section>
 
       <section id="responsible">
         <h2>
-          <span class="locale-en" lang="en">1) Data Controller</span>
+          <span class="locale-en" lang="en">1) Controller</span>
           <span class="locale-de" lang="de">1) Verantwortliche Stelle</span>
         </h2>
         <p>
-          <span class="locale-en" lang="en">Organization: HammerCoding</span>
-          <span class="locale-de" lang="de">Organisation: HammerCoding</span>
+          <span class="locale-en" lang="en"><strong>Organization:</strong> HammerCoding</span>
+          <span class="locale-de" lang="de"><strong>Organisation:</strong> HammerCoding</span>
         </p>
         <p>
-          <span class="locale-en" lang="en">Email: <a href="mailto:contact.sproutly@gmail.com">contact.sproutly@gmail.com</a></span>
-          <span class="locale-de" lang="de">E-Mail: <a href="mailto:contact.sproutly@gmail.com">contact.sproutly@gmail.com</a></span>
+          <span class="locale-en" lang="en"><strong>Email:</strong> <a href="mailto:contact.sproutly@gmail.com">contact.sproutly@gmail.com</a></span>
+          <span class="locale-de" lang="de"><strong>E-Mail:</strong> <a href="mailto:contact.sproutly@gmail.com">contact.sproutly@gmail.com</a></span>
         </p>
         <p>
-          <span class="locale-en" lang="en">Postal address: <em>Please insert or remove as appropriate.</em></span>
-          <span class="locale-de" lang="de">Postanschrift: <em>&lt;OPTIONAL – BITTE ANPASSEN/ENTFERNEN&gt;</em></span>
+          <span class="locale-en" lang="en">Use this address for any privacy enquiries.</span>
+          <span class="locale-de" lang="de">Nutzen Sie diese Adresse für Datenschutzanfragen.</span>
         </p>
       </section>
 
-      <section id="app-description">
-        <h2>
-          <span class="locale-en" lang="en">2) App Overview</span>
-          <span class="locale-de" lang="de">2) Kurzbeschreibung der App</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en">Sproutly helps you track “Plant Points” to support a plant-based and healthy lifestyle.</span>
-          <span class="locale-de" lang="de">Sproutly unterstützt Sie beim Tracken von „Plant Points“ für einen pflanzenbasierten und gesunden Lifestyle.</span>
-        </p>
-        <p>
-          <span class="locale-en" lang="en"><em>All data is stored exclusively on your device.</em></span>
-          <span class="locale-de" lang="de"><em>Alle Daten werden ausschließlich lokal auf Ihrem Gerät gespeichert.</em></span>
-        </p>
-        <p>
-          <span class="locale-en" lang="en"><em>We as developers do not receive any data from users.</em></span>
-          <span class="locale-de" lang="de"><em>Wir als Entwickler erhalten vom Nutzer keine Daten.</em></span>
-        </p>
-      </section>
-
-      <section id="data-processing">
-        <h2>
-          <span class="locale-en" lang="en">3) Processed Data</span>
-          <span class="locale-de" lang="de">3) Verarbeitete Daten</span>
-        </h2>
-        <ul>
-          <li>
-            <span class="locale-en" lang="en">Locally stored app content (Plant Points, settings, optional notes).</span>
-            <span class="locale-de" lang="de">Lokal gespeicherte App-Inhalte (Plant Points, Einstellungen, ggf. Notizen).</span>
-          </li>
-          <li>
-            <span class="locale-en" lang="en">No user profiles are created; <em>no</em> analysis of usage behaviour (<em>no tracking</em>).</span>
-            <span class="locale-de" lang="de">Keine Erstellung von Nutzerprofilen; es findet <em>keine</em> Analyse Ihres Nutzungsverhaltens statt (<em>kein Tracking</em>).</span>
-          </li>
-          <li>
-            <span class="locale-en" lang="en"><em>No data</em> is transmitted to HammerCoding or third parties.</span>
-            <span class="locale-de" lang="de"><em>Keine Übermittlung</em> an HammerCoding oder an Dritte.</span>
-          </li>
-        </ul>
-      </section>
-
-      <section id="storage">
-        <h2>
-          <span class="locale-en" lang="en">4) Storage Location &amp; Duration</span>
-          <span class="locale-de" lang="de">4) Speicherort &amp; -dauer</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en">Storage takes place exclusively on the end device until you delete the data in the app or uninstall it.</span>
-          <span class="locale-de" lang="de">Speicherung ausschließlich lokal auf dem Endgerät, bis Sie die Daten in der App oder durch Deinstallation löschen.</span>
-        </p>
-        <p>
-          <span class="locale-en" lang="en">Because the data resides only locally, only you can delete it.</span>
-          <span class="locale-de" lang="de">Da die Daten nur lokal vorliegen, können ausschließlich Sie selbst diese löschen.</span>
-        </p>
-      </section>
-
-      <section id="permissions">
-        <h2>
-          <span class="locale-en" lang="en">5) App Permissions</span>
-          <span class="locale-de" lang="de">5) Berechtigungen der App</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en">Sproutly only requests permissions that are essential for its core functionality.</span>
-          <span class="locale-de" lang="de">Sproutly nutzt nur Berechtigungen, die für Kernfunktionen erforderlich sind.</span>
-        </p>
-        <div class="table-container" role="region" aria-live="polite">
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">
-                  <span class="locale-en" lang="en">Permission</span>
-                  <span class="locale-de" lang="de">Berechtigung</span>
-                </th>
-                <th scope="col">
-                  <span class="locale-en" lang="en">Purpose</span>
-                  <span class="locale-de" lang="de">Zweck</span>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><code>POST_NOTIFICATIONS</code></td>
-                <td>
-                  <span class="locale-en" lang="en">Daily reminder to log your Plant Points.</span>
-                  <span class="locale-de" lang="de">Erinnerung an das tägliche Tracken von Plant Points.</span>
-                </td>
-              </tr>
-              <!-- To add future permissions, duplicate the row above and adjust the description. -->
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section id="third-parties">
-        <h2>
-          <span class="locale-en" lang="en">6) Third Parties / Data Sharing</span>
-          <span class="locale-de" lang="de">6) Drittanbieter / Datenweitergabe</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en"><em>No sharing, no selling, no cloud sync, no analytics SDKs.</em></span>
-          <span class="locale-de" lang="de"><em>Keine Weitergabe, <strong>kein</strong> Verkauf, <strong>keine</strong> Cloud-Synchronisation, <strong>keine</strong> Analytics-SDKs.</em></span>
-        </p>
-        <p>
-          <span class="locale-en" lang="en">This website is served via <em>GitHub Pages</em>; GitHub (Microsoft) may process technical server logs or cookies.</span>
-          <span class="locale-de" lang="de">Diese Website wird über <em>GitHub Pages</em> bereitgestellt; GitHub (Microsoft) kann technische Server-Logs/Cookies verarbeiten.</span>
-        </p>
-        <p>
-          <span class="locale-en" lang="en">See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub Privacy Statement</a> for details.</span>
-          <span class="locale-de" lang="de">Weitere Informationen im <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub Privacy Statement</a>.</span>
-        </p>
-        <!-- To document future third-party services, add additional paragraphs here with the relevant disclosures. -->
-      </section>
-
-      <section id="legal-basis">
-        <h2>
-          <span class="locale-en" lang="en">7) Legal Bases (GDPR)</span>
-          <span class="locale-de" lang="de">7) Rechtsgrundlagen (DSGVO)</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en">Article 6(1)(b) GDPR (performance of the user relationship, provision of app functions).</span>
-          <span class="locale-de" lang="de">Art. 6 Abs. 1 lit. b DSGVO (Erfüllung des Nutzungsverhältnisses, Bereitstellung der App-Funktionen).</span>
-        </p>
-        <p>
-          <span class="locale-en" lang="en">Where applicable: Article 6(1)(f) GDPR (legitimate interest in functionality/stability) – without tracking.</span>
-          <span class="locale-de" lang="de">Ggf. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an Funktionsfähigkeit/Fehlerfreiheit) – ohne Tracking.</span>
-        </p>
-      </section>
-
-      <section id="rights">
-        <h2>
-          <span class="locale-en" lang="en">8) Your Rights (GDPR)</span>
-          <span class="locale-de" lang="de">8) Ihre Rechte (DSGVO)</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en">You have the rights of access, rectification, erasure, restriction, data portability, objection, and complaint to a supervisory authority.</span>
-          <span class="locale-de" lang="de">Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerspruch sowie Beschwerde bei einer Aufsichtsbehörde.</span>
-        </p>
-        <p>
-          <span class="locale-en" lang="en">Because data exists only locally, you can delete it yourself within the app or by uninstalling it.</span>
-          <span class="locale-de" lang="de">Da Daten ausschließlich lokal gespeichert werden, können Sie diese in der App bzw. durch Deinstallation selbst löschen.</span>
-        </p>
-      </section>
-
-      <section id="security">
-        <h2>
-          <span class="locale-en" lang="en">9) Security</span>
-          <span class="locale-de" lang="de">9) Sicherheit</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en">Local storage means no transmission to developer servers.</span>
-          <span class="locale-de" lang="de">Lokale Speicherung; <em>keine Übertragung</em> an Server der Entwickler.</span>
-        </p>
-        <p>
-          <span class="locale-en" lang="en">We recommend activating device locks and encrypted backups.</span>
-          <span class="locale-de" lang="de">Empfehlung: Geräte-Sperrmechanismen und verschlüsselte Backups nutzen.</span>
-        </p>
-      </section>
-
-      <section id="transfers">
-        <h2>
-          <span class="locale-en" lang="en">10) International Data Transfers</span>
-          <span class="locale-de" lang="de">10) Internationale Datentransfers</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en">For the app: <em>none.</em></span>
-          <span class="locale-de" lang="de">Für die App: <em>keine.</em></span>
-        </p>
-        <p>
-          <span class="locale-en" lang="en">For the website: hosting via GitHub (USA) – see GitHub privacy notice above.</span>
-          <span class="locale-de" lang="de">Für die Website: Hosting durch GitHub (USA) – siehe GitHub-Datenschutz (Link oben).</span>
-        </p>
-      </section>
-
-      <section id="children">
-        <h2>
-          <span class="locale-en" lang="en">11) Children</span>
-          <span class="locale-de" lang="de">11) Kinder</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en">The app is not directed at children under 16; we do not knowingly process their data.</span>
-          <span class="locale-de" lang="de">Die App richtet sich nicht an Kinder unter 16 Jahren; es erfolgt keine wissentlich erfolgende Verarbeitung.</span>
-        </p>
-      </section>
-
-      <section id="changes">
-        <h2>
-          <span class="locale-en" lang="en">12) Changes to this Privacy Policy</span>
-          <span class="locale-de" lang="de">12) Änderungen dieser Datenschutzerklärung</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en">We may update this statement; the version on this page is the authoritative one.</span>
-          <span class="locale-de" lang="de">Wir können diese Erklärung anpassen; maßgeblich ist die jeweils aktuelle Version auf dieser Seite.</span>
-        </p>
-      </section>
-
-      <section id="contact">
-        <h2>
-          <span class="locale-en" lang="en">13) Contact for Privacy Requests</span>
-          <span class="locale-de" lang="de">13) Kontakt für Datenschutzanfragen</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en">HammerCoding – Email: <a href="mailto:contact.sproutly@gmail.com">contact.sproutly@gmail.com</a></span>
-          <span class="locale-de" lang="de">HammerCoding – E-Mail: <a href="mailto:contact.sproutly@gmail.com">contact.sproutly@gmail.com</a></span>
-        </p>
-      </section>
     </main>
     <footer>
       <div class="footer-inner">
