@@ -402,17 +402,6 @@
         font-size: 0.95rem;
       }
 
-      [data-lang="en"] .locale-de,
-      [data-lang="de"] .locale-en {
-        display: none;
-      }
-
-      .locale-en,
-      .locale-de {
-        color: inherit;
-        font: inherit;
-      }
-
       .logo-fallback {
         font-weight: 700;
         color: var(--brand-green);
@@ -501,10 +490,7 @@
     </style>
   </head>
   <body data-lang="en">
-    <a class="skip-link" href="#content">
-      <span class="locale-en" lang="en">Skip to content</span>
-      <span class="locale-de" lang="de">Zum Inhalt</span>
-    </a>
+    <a class="skip-link" href="#content" data-i18n="skip-link">Skip to content</a>
     <header>
       <div class="header-inner">
         <div class="brand">
@@ -513,14 +499,8 @@
             <span class="logo-fallback" hidden>Sproutly</span>
           </div>
           <div class="brand-text">
-            <h1>
-              <span class="locale-en" lang="en">🪴 Privacy Policy – Sproutly</span>
-              <span class="locale-de" lang="de">🪴 Datenschutzerklärung – Sproutly</span>
-            </h1>
-            <p>
-              <span class="locale-en" lang="en">Your plant-first privacy, kept right on your device.</span>
-              <span class="locale-de" lang="de">Ihre pflanzenbasierte Privatsphäre bleibt auf Ihrem Gerät.</span>
-            </p>
+            <h1 data-i18n="hero-title">🪴 Privacy Policy – Sproutly</h1>
+            <p data-i18n="hero-subtitle">Your plant-first privacy, kept right on your device.</p>
           </div>
         </div>
         <div class="lang-switcher" role="group" aria-label="Language selection">
@@ -534,154 +514,89 @@
           </button>
           <span class="badge">
             <span aria-hidden="true">🔒</span>
-            <span class="locale-en" lang="en">Privacy-first</span>
-            <span class="locale-de" lang="de">Datenschutz zuerst</span>
+            <span data-i18n="badge-text">Privacy-first</span>
           </span>
         </div>
       </div>
     </header>
     <nav aria-label="Table of contents">
-      <h2>
-        <span class="locale-en" lang="en">Contents</span>
-        <span class="locale-de" lang="de">Inhalt</span>
-      </h2>
+      <h2 data-i18n="nav-heading">Contents</h2>
       <ul>
-        <li><a href="#overview"><span class="locale-en" lang="en">At a Glance</span><span class="locale-de" lang="de">Auf einen Blick</span></a></li>
-        <li><a href="#responsible"><span class="locale-en" lang="en">Controller</span><span class="locale-de" lang="de">Verantwortliche Stelle</span></a></li>
-        <li><a href="#app"><span class="locale-en" lang="en">App Overview</span><span class="locale-de" lang="de">Kurzbeschreibung</span></a></li>
-        <li><a href="#data"><span class="locale-en" lang="en">Processed Data</span><span class="locale-de" lang="de">Verarbeitete Daten</span></a></li>
-        <li><a href="#storage"><span class="locale-en" lang="en">Storage</span><span class="locale-de" lang="de">Speicherung</span></a></li>
-        <li><a href="#permissions"><span class="locale-en" lang="en">Permissions</span><span class="locale-de" lang="de">Berechtigungen</span></a></li>
-        <li><a href="#third-parties"><span class="locale-en" lang="en">Third Parties</span><span class="locale-de" lang="de">Drittanbieter</span></a></li>
-        <li><a href="#legal"><span class="locale-en" lang="en">Legal Basis</span><span class="locale-de" lang="de">Rechtsgrundlagen</span></a></li>
-        <li><a href="#rights"><span class="locale-en" lang="en">Your Rights</span><span class="locale-de" lang="de">Ihre Rechte</span></a></li>
-        <li><a href="#security"><span class="locale-en" lang="en">Security</span><span class="locale-de" lang="de">Sicherheit</span></a></li>
-        <li><a href="#transfers"><span class="locale-en" lang="en">Transfers</span><span class="locale-de" lang="de">Internationale Daten</span></a></li>
-        <li><a href="#children"><span class="locale-en" lang="en">Children</span><span class="locale-de" lang="de">Kinder</span></a></li>
-        <li><a href="#changes"><span class="locale-en" lang="en">Changes</span><span class="locale-de" lang="de">Änderungen</span></a></li>
-        <li><a href="#contact"><span class="locale-en" lang="en">Contact</span><span class="locale-de" lang="de">Kontakt</span></a></li>
+        <li><a href="#overview" data-i18n="nav-overview">At a Glance</a></li>
+        <li><a href="#responsible" data-i18n="nav-responsible">Controller</a></li>
+        <li><a href="#app" data-i18n="nav-app">App Overview</a></li>
+        <li><a href="#data" data-i18n="nav-data">Processed Data</a></li>
+        <li><a href="#storage" data-i18n="nav-storage">Storage</a></li>
+        <li><a href="#permissions" data-i18n="nav-permissions">Permissions</a></li>
+        <li><a href="#third-parties" data-i18n="nav-third-parties">Third Parties</a></li>
+        <li><a href="#legal" data-i18n="nav-legal">Legal Basis</a></li>
+        <li><a href="#rights" data-i18n="nav-rights">Your Rights</a></li>
+        <li><a href="#security" data-i18n="nav-security">Security</a></li>
+        <li><a href="#transfers" data-i18n="nav-transfers">Transfers</a></li>
+        <li><a href="#children" data-i18n="nav-children">Children</a></li>
+        <li><a href="#changes" data-i18n="nav-changes">Changes</a></li>
+        <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
       </ul>
     </nav>
     <main id="content">
       <section id="overview" class="summary-card">
-        <h2>
-          <span class="locale-en" lang="en">At a Glance</span>
-          <span class="locale-de" lang="de">Auf einen Blick</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en">Sproutly keeps your plant-forward routine private with every insight stored on your device.</span>
-          <span class="locale-de" lang="de">Sproutly schützt Ihre pflanzenbasierte Routine – alle Inhalte bleiben auf Ihrem Endgerät.</span>
-        </p>
+        <h2 data-i18n="overview-heading">At a Glance</h2>
+        <p data-i18n="overview-intro">Sproutly keeps your plant-forward routine private with every insight stored on your device.</p>
         <ul>
-          <li><span class="locale-en" lang="en">No account registration required</span><span class="locale-de" lang="de">Keine Kontoregistrierung erforderlich</span></li>
-          <li><span class="locale-en" lang="en">All data is stored locally on your device</span><span class="locale-de" lang="de">Alle Daten werden ausschließlich lokal auf Ihrem Gerät gespeichert</span></li>
-          <li><span class="locale-en" lang="en">No cloud synchronisation or data sharing</span><span class="locale-de" lang="de">Keine Cloud-Synchronisation oder Datenweitergabe</span></li>
-          <li><span class="locale-en" lang="en">No advertising, tracking, or analytics</span><span class="locale-de" lang="de">Keine Werbung, kein Tracking, keine Analyse Ihres Nutzungsverhaltens</span></li>
-          <li><span class="locale-en" lang="en">Notifications work only as an optional daily reminder</span><span class="locale-de" lang="de">Benachrichtigungen dienen ausschließlich als tägliche Erinnerung</span></li>
+          <li data-i18n="overview-bullet-1">No account registration required</li>
+          <li data-i18n="overview-bullet-2">All data is stored locally on your device</li>
+          <li data-i18n="overview-bullet-3">No cloud synchronisation or data sharing</li>
+          <li data-i18n="overview-bullet-4">No advertising, tracking, or analytics</li>
+          <li data-i18n="overview-bullet-5">Notifications work only as an optional daily reminder</li>
         </ul>
       </section>
 
       <section id="responsible">
-        <h2>
-          <span class="locale-en" lang="en">1) Controller</span>
-          <span class="locale-de" lang="de">1) Verantwortliche Stelle</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en"><strong>Organisation:</strong> HammerCoding</span>
-          <span class="locale-de" lang="de"><strong>Organisation:</strong> HammerCoding</span>
-        </p>
-        <p>
-          <span class="locale-en" lang="en"><strong>Email:</strong> <a href="mailto:contact.sproutly@gmail.com">contact.sproutly@gmail.com</a></span>
-          <span class="locale-de" lang="de"><strong>E-Mail:</strong> <a href="mailto:contact.sproutly@gmail.com">contact.sproutly@gmail.com</a></span>
-        </p>
-        <p>
-          <span class="locale-en" lang="en"><strong>Postal address:</strong> <em>Optional – please add or remove.</em></span>
-          <span class="locale-de" lang="de"><strong>Postanschrift:</strong> <em>(optional – bitte ergänzen oder entfernen)</em></span>
-        </p>
+        <h2 data-i18n="responsible-heading">1) Controller</h2>
+        <p data-i18n="responsible-organisation"><strong>Organisation:</strong> HammerCoding</p>
+        <p data-i18n="responsible-email"><strong>Email:</strong> <a href="mailto:contact.sproutly@gmail.com">contact.sproutly@gmail.com</a></p>
+        <p data-i18n="responsible-address"><strong>Postal address:</strong> <em>Optional – please add or remove.</em></p>
       </section>
 
       <section id="app">
-        <h2>
-          <span class="locale-en" lang="en">2) App Overview</span>
-          <span class="locale-de" lang="de">2) Kurzbeschreibung der App</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en">Sproutly helps you track so-called Plant Points – a playful way to support a plant-based and healthy lifestyle.</span>
-          <span class="locale-de" lang="de">Sproutly unterstützt Sie beim Tracken sogenannter Plant Points – einem spielerischen Ansatz für einen pflanzenbasierten, gesunden Lebensstil.</span>
-        </p>
-        <p>
-          <span class="locale-en" lang="en"><strong>All data stays exclusively on your device.</strong></span>
-          <span class="locale-de" lang="de"><strong>Alle Daten werden ausschließlich lokal auf Ihrem Gerät gespeichert.</strong></span>
-        </p>
-        <p>
-          <span class="locale-en" lang="en">We as developers do not receive any data and have no access to your in-app content.</span>
-          <span class="locale-de" lang="de">Wir als Entwickler erhalten keine Daten und haben keinen Zugriff auf Ihre App-Inhalte.</span>
-        </p>
+        <h2 data-i18n="app-heading">2) App Overview</h2>
+        <p data-i18n="app-paragraph-1">Sproutly helps you track so-called Plant Points – a playful way to support a plant-based and healthy lifestyle.</p>
+        <p data-i18n="app-paragraph-2"><strong>All data stays exclusively on your device.</strong></p>
+        <p data-i18n="app-paragraph-3">We as developers do not receive any data and have no access to your in-app content.</p>
       </section>
 
       <section id="data">
-        <h2>
-          <span class="locale-en" lang="en">3) Processed Data</span>
-          <span class="locale-de" lang="de">3) Verarbeitete Daten</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en">Sproutly stores only the information required for its core features, such as:</span>
-          <span class="locale-de" lang="de">Sproutly speichert nur Informationen, die für die Kernfunktionen erforderlich sind, etwa:</span>
-        </p>
+        <h2 data-i18n="data-heading">3) Processed Data</h2>
+        <p data-i18n="data-paragraph-1">Sproutly stores only the information required for its core features, such as:</p>
         <ul>
-          <li><span class="locale-en" lang="en">Your collected Plant Points</span><span class="locale-de" lang="de">Ihre gesammelten Plant Points</span></li>
-          <li><span class="locale-en" lang="en">App settings (target values, reminder preferences, locale)</span><span class="locale-de" lang="de">Einstellungen in der App (Zielwerte, Benachrichtigungen, Sprache)</span></li>
+          <li data-i18n="data-bullet-1">Your collected Plant Points</li>
+          <li data-i18n="data-bullet-2">App settings (target values, reminder preferences, locale)</li>
         </ul>
-        <p>
-          <span class="locale-en" lang="en">No personal profiles are created, no analytics or marketing processing takes place, and no data is transmitted to HammerCoding or third parties.</span>
-          <span class="locale-de" lang="de">Es werden keine personenbezogenen Profile erstellt, keine Analysen oder Marketingverarbeitungen durchgeführt und keinerlei Daten an HammerCoding oder Dritte übermittelt.</span>
-        </p>
+        <p data-i18n="data-paragraph-2">No personal profiles are created, no analytics or marketing processing takes place, and no data is transmitted to HammerCoding or third parties.</p>
       </section>
 
       <section id="storage">
-        <h2>
-          <span class="locale-en" lang="en">4) Storage Location &amp; Duration</span>
-          <span class="locale-de" lang="de">4) Speicherort und Speicherdauer</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en">All app data is stored locally on your device until you delete it in the app or uninstall Sproutly.</span>
-          <span class="locale-de" lang="de">Sämtliche App-Daten werden lokal auf Ihrem Gerät gespeichert, bis Sie sie in der App löschen oder Sproutly deinstallieren.</span>
-        </p>
-        <p>
-          <span class="locale-en" lang="en">Because the information only exists locally, you alone can remove it.</span>
-          <span class="locale-de" lang="de">Da die Informationen ausschließlich lokal vorliegen, können nur Sie selbst diese entfernen.</span>
-        </p>
+        <h2 data-i18n="storage-heading">4) Storage Location &amp; Duration</h2>
+        <p data-i18n="storage-paragraph-1">All app data is stored locally on your device until you delete it in the app or uninstall Sproutly.</p>
+        <p data-i18n="storage-paragraph-2">Because the information only exists locally, you alone can remove it.</p>
       </section>
 
       <section id="permissions">
-        <h2>
-          <span class="locale-en" lang="en">5) App Permissions</span>
-          <span class="locale-de" lang="de">5) Berechtigungen der App</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en">Sproutly uses only the permissions required for its functionality. Currently this includes:</span>
-          <span class="locale-de" lang="de">Sproutly nutzt ausschließlich die Berechtigungen, die für den Funktionsumfang notwendig sind. Aktuell betrifft dies:</span>
-        </p>
+        <h2 data-i18n="permissions-heading">5) App Permissions</h2>
+        <p data-i18n="permissions-paragraph-1">Sproutly uses only the permissions required for its functionality. Currently this includes:</p>
         <div class="table-container" role="region" aria-live="polite">
           <table>
             <thead>
               <tr>
-                <th scope="col">
-                  <span class="locale-en" lang="en">Permission</span>
-                  <span class="locale-de" lang="de">Berechtigung</span>
-                </th>
-                <th scope="col">
-                  <span class="locale-en" lang="en">Purpose</span>
-                  <span class="locale-de" lang="de">Zweck</span>
-                </th>
+                <th scope="col" data-i18n="permissions-column-permission">Permission</th>
+                <th scope="col" data-i18n="permissions-column-purpose">Purpose</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td><code>POST_NOTIFICATIONS</code></td>
                 <td>
-                  <span class="locale-en" lang="en">Reminder to log your daily Plant Points.</span>
-                  <span class="locale-de" lang="de">Erinnerung an das tägliche Tracken Ihrer Plant Points.</span>
+                  <span data-i18n="permissions-purpose-notifications">Reminder to log your daily Plant Points.</span>
                 </td>
               </tr>
             </tbody>
@@ -691,123 +606,57 @@
       </section>
 
       <section id="third-parties">
-        <h2>
-          <span class="locale-en" lang="en">6) Third Parties &amp; Data Sharing</span>
-          <span class="locale-de" lang="de">6) Drittanbieter und Datenweitergabe</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en">There is no sharing, selling, or cloud synchronisation of your data. Sproutly integrates no third-party SDKs and no analytics services.</span>
-          <span class="locale-de" lang="de">Es erfolgt keine Weitergabe, kein Verkauf und keine Cloud-Synchronisation Ihrer Daten. Sproutly bindet keine Drittanbieter-SDKs und keine Analysedienste ein.</span>
-        </p>
-        <p>
-          <span class="locale-en" lang="en">This website is hosted via GitHub Pages. GitHub Inc. (Microsoft) may process technical data such as IP addresses or server logs to provide the site.</span>
-          <span class="locale-de" lang="de">Diese Website wird über GitHub Pages bereitgestellt. GitHub Inc. (Microsoft) kann zur Bereitstellung technische Daten wie IP-Adressen oder Server-Logs verarbeiten.</span>
-        </p>
-        <p>
-          <span class="locale-en" lang="en">See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub Privacy Statement</a> for details.</span>
-          <span class="locale-de" lang="de">Details finden Sie in der <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub-Datenschutzerklärung</a>.</span>
-        </p>
+        <h2 data-i18n="third-parties-heading">6) Third Parties &amp; Data Sharing</h2>
+        <p data-i18n="third-parties-paragraph-1">There is no sharing, selling, or cloud synchronisation of your data. Sproutly integrates no third-party SDKs and no analytics services.</p>
+        <p data-i18n="third-parties-paragraph-2">This website is hosted via GitHub Pages. GitHub Inc. (Microsoft) may process technical data such as IP addresses or server logs to provide the site.</p>
+        <p data-i18n="third-parties-paragraph-3">See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub Privacy Statement</a> for details.</p>
       </section>
 
       <section id="legal">
-        <h2>
-          <span class="locale-en" lang="en">7) Legal Bases</span>
-          <span class="locale-de" lang="de">7) Rechtsgrundlagen</span>
-        </h2>
+        <h2 data-i18n="legal-heading">7) Legal Bases</h2>
         <ul>
-          <li><span class="locale-en" lang="en">Article 6(1)(b) GDPR – fulfilment of the user relationship and provision of app functions.</span><span class="locale-de" lang="de">Art. 6 Abs. 1 lit. b DSGVO – Erfüllung des Nutzungsverhältnisses und Bereitstellung der App-Funktionen.</span></li>
-          <li><span class="locale-en" lang="en">Article 6(1)(f) GDPR – legitimate interest in functionality and stability, without tracking or analytics.</span><span class="locale-de" lang="de">Art. 6 Abs. 1 lit. f DSGVO – berechtigtes Interesse an Funktionsfähigkeit und Fehlerfreiheit, ohne Tracking oder Analytik.</span></li>
+          <li data-i18n="legal-bullet-1">Article 6(1)(b) GDPR – fulfilment of the user relationship and provision of app functions.</li>
+          <li data-i18n="legal-bullet-2">Article 6(1)(f) GDPR – legitimate interest in functionality and stability, without tracking or analytics.</li>
         </ul>
       </section>
 
       <section id="rights">
-        <h2>
-          <span class="locale-en" lang="en">8) Your Rights</span>
-          <span class="locale-de" lang="de">8) Ihre Rechte</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en">You have the right to access, rectification, erasure, restriction, data portability, objection, and to lodge a complaint with a supervisory authority.</span>
-          <span class="locale-de" lang="de">Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerspruch sowie Beschwerde bei einer Aufsichtsbehörde.</span>
-        </p>
-        <p>
-          <span class="locale-en" lang="en">Because Sproutly stores your data locally, you can exercise these rights directly by deleting the data or uninstalling the app.</span>
-          <span class="locale-de" lang="de">Da Sproutly Ihre Daten lokal speichert, können Sie diese Rechte unmittelbar ausüben, indem Sie die Daten löschen oder die App deinstallieren.</span>
-        </p>
+        <h2 data-i18n="rights-heading">8) Your Rights</h2>
+        <p data-i18n="rights-paragraph-1">You have the right to access, rectification, erasure, restriction, data portability, objection, and to lodge a complaint with a supervisory authority.</p>
+        <p data-i18n="rights-paragraph-2">Because Sproutly stores your data locally, you can exercise these rights directly by deleting the data or uninstalling the app.</p>
       </section>
 
       <section id="security">
-        <h2>
-          <span class="locale-en" lang="en">9) Security</span>
-          <span class="locale-de" lang="de">9) Sicherheit</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en">No data is transmitted over the internet; everything remains on your device.</span>
-          <span class="locale-de" lang="de">Es werden keine Daten über das Internet übertragen; alles verbleibt auf Ihrem Gerät.</span>
-        </p>
-        <p>
-          <span class="locale-en" lang="en">Activate your device security features (screen lock, encrypted backups) to protect the information.</span>
-          <span class="locale-de" lang="de">Aktivieren Sie die Sicherheitsfunktionen Ihres Geräts (Sperrbildschirm, verschlüsselte Backups), um die Informationen zu schützen.</span>
-        </p>
+        <h2 data-i18n="security-heading">9) Security</h2>
+        <p data-i18n="security-paragraph-1">No data is transmitted over the internet; everything remains on your device.</p>
+        <p data-i18n="security-paragraph-2">Activate your device security features (screen lock, encrypted backups) to protect the information.</p>
       </section>
 
       <section id="transfers">
-        <h2>
-          <span class="locale-en" lang="en">10) International Data Transfers</span>
-          <span class="locale-de" lang="de">10) Internationale Datentransfers</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en">No international transfers occur for the Sproutly app itself.</span>
-          <span class="locale-de" lang="de">Für die Sproutly-App selbst finden keine internationalen Datentransfers statt.</span>
-        </p>
-        <p>
-          <span class="locale-en" lang="en">This website is served via GitHub (USA); please review the GitHub privacy notice linked above.</span>
-          <span class="locale-de" lang="de">Diese Website wird über GitHub (USA) ausgeliefert; beachten Sie hierzu die oben verlinkte GitHub-Datenschutzerklärung.</span>
-        </p>
+        <h2 data-i18n="transfers-heading">10) International Data Transfers</h2>
+        <p data-i18n="transfers-paragraph-1">No international transfers occur for the Sproutly app itself.</p>
+        <p data-i18n="transfers-paragraph-2">This website is served via GitHub (USA); please review the GitHub privacy notice linked above.</p>
       </section>
 
       <section id="children">
-        <h2>
-          <span class="locale-en" lang="en">11) Children</span>
-          <span class="locale-de" lang="de">11) Kinder</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en">The app is not directed at children under 16 and we do not knowingly process their data.</span>
-          <span class="locale-de" lang="de">Die App richtet sich nicht an Kinder unter 16 Jahren; eine wissentlich erfolgende Verarbeitung findet nicht statt.</span>
-        </p>
+        <h2 data-i18n="children-heading">11) Children</h2>
+        <p data-i18n="children-paragraph-1">The app is not directed at children under 16 and we do not knowingly process their data.</p>
       </section>
 
       <section id="changes">
-        <h2>
-          <span class="locale-en" lang="en">12) Changes to this Privacy Notice</span>
-          <span class="locale-de" lang="de">12) Änderungen dieser Datenschutzerklärung</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en">We may update this privacy notice when necessary; the version on this page is always the current one.</span>
-          <span class="locale-de" lang="de">Wir können diese Datenschutzerklärung bei Bedarf aktualisieren; maßgeblich ist stets die Version auf dieser Seite.</span>
-        </p>
+        <h2 data-i18n="changes-heading">12) Changes to this Privacy Notice</h2>
+        <p data-i18n="changes-paragraph-1">We may update this privacy notice when necessary; the version on this page is always the current one.</p>
       </section>
 
       <section id="contact">
-        <h2>
-          <span class="locale-en" lang="en">13) Contact for Privacy Requests</span>
-          <span class="locale-de" lang="de">13) Kontakt für Datenschutzanfragen</span>
-        </h2>
-        <p>
-          <span class="locale-en" lang="en">HammerCoding<br>Email: <a href="mailto:contact.sproutly@gmail.com">contact.sproutly@gmail.com</a></span>
-          <span class="locale-de" lang="de">HammerCoding<br>E-Mail: <a href="mailto:contact.sproutly@gmail.com">contact.sproutly@gmail.com</a></span>
-        </p>
+        <h2 data-i18n="contact-heading">13) Contact for Privacy Requests</h2>
+        <p data-i18n="contact-paragraph-1">HammerCoding<br>Email: <a href="mailto:contact.sproutly@gmail.com">contact.sproutly@gmail.com</a></p>
       </section>
-    </main></main>
+    </main>
     <footer>
       <div class="footer-inner">
-        <p>
-          <span class="locale-en" lang="en">HammerCoding · Sproutly</span>
-          <span class="locale-de" lang="de">HammerCoding · Sproutly</span>
-        </p>
-        <p class="updated">
-          <span class="locale-en" lang="en">Last updated: <span data-updated="en"></span></span>
-          <span class="locale-de" lang="de">Zuletzt aktualisiert: <span data-updated="de"></span></span>
-        </p>
+        <p data-i18n="footer-brand">HammerCoding · Sproutly</p>
+        <p class="updated" data-i18n="footer-updated">Last updated: <span data-updated></span></p>
       </div>
     </footer>
     <script>
@@ -817,6 +666,157 @@
         const storageKey = 'sproutly-lang';
 
         const normalizeLang = (lang) => (lang === 'de' ? 'de' : 'en');
+
+        const translatableElements = Array.from(document.querySelectorAll('[data-i18n]'));
+
+        const translations = {
+          en: {
+            'skip-link': 'Skip to content',
+            'hero-title': '🪴 Privacy Policy – Sproutly',
+            'hero-subtitle': 'Your plant-first privacy, kept right on your device.',
+            'badge-text': 'Privacy-first',
+            'nav-heading': 'Contents',
+            'nav-overview': 'At a Glance',
+            'nav-responsible': 'Controller',
+            'nav-app': 'App Overview',
+            'nav-data': 'Processed Data',
+            'nav-storage': 'Storage',
+            'nav-permissions': 'Permissions',
+            'nav-third-parties': 'Third Parties',
+            'nav-legal': 'Legal Basis',
+            'nav-rights': 'Your Rights',
+            'nav-security': 'Security',
+            'nav-transfers': 'Transfers',
+            'nav-children': 'Children',
+            'nav-changes': 'Changes',
+            'nav-contact': 'Contact',
+            'overview-heading': 'At a Glance',
+            'overview-intro': 'Sproutly keeps your plant-forward routine private with every insight stored on your device.',
+            'overview-bullet-1': 'No account registration required',
+            'overview-bullet-2': 'All data is stored locally on your device',
+            'overview-bullet-3': 'No cloud synchronisation or data sharing',
+            'overview-bullet-4': 'No advertising, tracking, or analytics',
+            'overview-bullet-5': 'Notifications work only as an optional daily reminder',
+            'responsible-heading': '1) Controller',
+            'responsible-organisation': '<strong>Organisation:</strong> HammerCoding',
+            'responsible-email': '<strong>Email:</strong> <a href="mailto:contact.sproutly@gmail.com">contact.sproutly@gmail.com</a>',
+            'responsible-address': '<strong>Postal address:</strong> <em>Optional – please add or remove.</em>',
+            'app-heading': '2) App Overview',
+            'app-paragraph-1': 'Sproutly helps you track so-called Plant Points – a playful way to support a plant-based and healthy lifestyle.',
+            'app-paragraph-2': '<strong>All data stays exclusively on your device.</strong>',
+            'app-paragraph-3': 'We as developers do not receive any data and have no access to your in-app content.',
+            'data-heading': '3) Processed Data',
+            'data-paragraph-1': 'Sproutly stores only the information required for its core features, such as:',
+            'data-bullet-1': 'Your collected Plant Points',
+            'data-bullet-2': 'App settings (target values, reminder preferences, locale)',
+            'data-paragraph-2': 'No personal profiles are created, no analytics or marketing processing takes place, and no data is transmitted to HammerCoding or third parties.',
+            'storage-heading': '4) Storage Location &amp; Duration',
+            'storage-paragraph-1': 'All app data is stored locally on your device until you delete it in the app or uninstall Sproutly.',
+            'storage-paragraph-2': 'Because the information only exists locally, you alone can remove it.',
+            'permissions-heading': '5) App Permissions',
+            'permissions-paragraph-1': 'Sproutly uses only the permissions required for its functionality. Currently this includes:',
+            'permissions-column-permission': 'Permission',
+            'permissions-column-purpose': 'Purpose',
+            'permissions-purpose-notifications': 'Reminder to log your daily Plant Points.',
+            'third-parties-heading': '6) Third Parties &amp; Data Sharing',
+            'third-parties-paragraph-1': 'There is no sharing, selling, or cloud synchronisation of your data. Sproutly integrates no third-party SDKs and no analytics services.',
+            'third-parties-paragraph-2': 'This website is hosted via GitHub Pages. GitHub Inc. (Microsoft) may process technical data such as IP addresses or server logs to provide the site.',
+            'third-parties-paragraph-3': 'See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub Privacy Statement</a> for details.',
+            'legal-heading': '7) Legal Bases',
+            'legal-bullet-1': 'Article 6(1)(b) GDPR – fulfilment of the user relationship and provision of app functions.',
+            'legal-bullet-2': 'Article 6(1)(f) GDPR – legitimate interest in functionality and stability, without tracking or analytics.',
+            'rights-heading': '8) Your Rights',
+            'rights-paragraph-1': 'You have the right to access, rectification, erasure, restriction, data portability, objection, and to lodge a complaint with a supervisory authority.',
+            'rights-paragraph-2': 'Because Sproutly stores your data locally, you can exercise these rights directly by deleting the data or uninstalling the app.',
+            'security-heading': '9) Security',
+            'security-paragraph-1': 'No data is transmitted over the internet; everything remains on your device.',
+            'security-paragraph-2': 'Activate your device security features (screen lock, encrypted backups) to protect the information.',
+            'transfers-heading': '10) International Data Transfers',
+            'transfers-paragraph-1': 'No international transfers occur for the Sproutly app itself.',
+            'transfers-paragraph-2': 'This website is served via GitHub (USA); please review the GitHub privacy notice linked above.',
+            'children-heading': '11) Children',
+            'children-paragraph-1': 'The app is not directed at children under 16 and we do not knowingly process their data.',
+            'changes-heading': '12) Changes to this Privacy Notice',
+            'changes-paragraph-1': 'We may update this privacy notice when necessary; the version on this page is always the current one.',
+            'contact-heading': '13) Contact for Privacy Requests',
+            'contact-paragraph-1': 'HammerCoding<br>Email: <a href="mailto:contact.sproutly@gmail.com">contact.sproutly@gmail.com</a>',
+            'footer-brand': 'HammerCoding · Sproutly',
+            'footer-updated': 'Last updated: <span data-updated></span>',
+          },
+          de: {
+            'skip-link': 'Zum Inhalt',
+            'hero-title': '🪴 Datenschutzerklärung – Sproutly',
+            'hero-subtitle': 'Ihre pflanzenbasierte Privatsphäre bleibt auf Ihrem Gerät.',
+            'badge-text': 'Datenschutz zuerst',
+            'nav-heading': 'Inhalt',
+            'nav-overview': 'Auf einen Blick',
+            'nav-responsible': 'Verantwortliche Stelle',
+            'nav-app': 'Kurzbeschreibung',
+            'nav-data': 'Verarbeitete Daten',
+            'nav-storage': 'Speicherung',
+            'nav-permissions': 'Berechtigungen',
+            'nav-third-parties': 'Drittanbieter',
+            'nav-legal': 'Rechtsgrundlagen',
+            'nav-rights': 'Ihre Rechte',
+            'nav-security': 'Sicherheit',
+            'nav-transfers': 'Internationale Daten',
+            'nav-children': 'Kinder',
+            'nav-changes': 'Änderungen',
+            'nav-contact': 'Kontakt',
+            'overview-heading': 'Auf einen Blick',
+            'overview-intro': 'Sproutly schützt Ihre pflanzenbasierte Routine – alle Inhalte bleiben auf Ihrem Endgerät.',
+            'overview-bullet-1': 'Keine Kontoregistrierung erforderlich',
+            'overview-bullet-2': 'Alle Daten werden ausschließlich lokal auf Ihrem Gerät gespeichert',
+            'overview-bullet-3': 'Keine Cloud-Synchronisation oder Datenweitergabe',
+            'overview-bullet-4': 'Keine Werbung, kein Tracking, keine Analyse Ihres Nutzungsverhaltens',
+            'overview-bullet-5': 'Benachrichtigungen dienen ausschließlich als tägliche Erinnerung',
+            'responsible-heading': '1) Verantwortliche Stelle',
+            'responsible-organisation': '<strong>Organisation:</strong> HammerCoding',
+            'responsible-email': '<strong>E-Mail:</strong> <a href="mailto:contact.sproutly@gmail.com">contact.sproutly@gmail.com</a>',
+            'responsible-address': '<strong>Postanschrift:</strong> <em>(optional – bitte ergänzen oder entfernen)</em>',
+            'app-heading': '2) Kurzbeschreibung der App',
+            'app-paragraph-1': 'Sproutly unterstützt Sie beim Tracken sogenannter Plant Points – einem spielerischen Ansatz für einen pflanzenbasierten, gesunden Lebensstil.',
+            'app-paragraph-2': '<strong>Alle Daten werden ausschließlich lokal auf Ihrem Gerät gespeichert.</strong>',
+            'app-paragraph-3': 'Wir als Entwickler erhalten keine Daten und haben keinen Zugriff auf Ihre App-Inhalte.',
+            'data-heading': '3) Verarbeitete Daten',
+            'data-paragraph-1': 'Sproutly speichert nur Informationen, die für die Kernfunktionen erforderlich sind, etwa:',
+            'data-bullet-1': 'Ihre gesammelten Plant Points',
+            'data-bullet-2': 'Einstellungen in der App (Zielwerte, Benachrichtigungen, Sprache)',
+            'data-paragraph-2': 'Es werden keine personenbezogenen Profile erstellt, keine Analysen oder Marketingverarbeitungen durchgeführt und keinerlei Daten an HammerCoding oder Dritte übermittelt.',
+            'storage-heading': '4) Speicherort und Speicherdauer',
+            'storage-paragraph-1': 'Sämtliche App-Daten werden lokal auf Ihrem Gerät gespeichert, bis Sie sie in der App löschen oder Sproutly deinstallieren.',
+            'storage-paragraph-2': 'Da die Informationen ausschließlich lokal vorliegen, können nur Sie selbst diese entfernen.',
+            'permissions-heading': '5) Berechtigungen der App',
+            'permissions-paragraph-1': 'Sproutly nutzt ausschließlich die Berechtigungen, die für den Funktionsumfang notwendig sind. Aktuell betrifft dies:',
+            'permissions-column-permission': 'Berechtigung',
+            'permissions-column-purpose': 'Zweck',
+            'permissions-purpose-notifications': 'Erinnerung an das tägliche Tracken Ihrer Plant Points.',
+            'third-parties-heading': '6) Drittanbieter und Datenweitergabe',
+            'third-parties-paragraph-1': 'Es erfolgt keine Weitergabe, kein Verkauf und keine Cloud-Synchronisation Ihrer Daten. Sproutly bindet keine Drittanbieter-SDKs und keine Analysedienste ein.',
+            'third-parties-paragraph-2': 'Diese Website wird über GitHub Pages bereitgestellt. GitHub Inc. (Microsoft) kann zur Bereitstellung technische Daten wie IP-Adressen oder Server-Logs verarbeiten.',
+            'third-parties-paragraph-3': 'Details finden Sie in der <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub-Datenschutzerklärung</a>.',
+            'legal-heading': '7) Rechtsgrundlagen',
+            'legal-bullet-1': 'Art. 6 Abs. 1 lit. b DSGVO – Erfüllung des Nutzungsverhältnisses und Bereitstellung der App-Funktionen.',
+            'legal-bullet-2': 'Art. 6 Abs. 1 lit. f DSGVO – berechtigtes Interesse an Funktionsfähigkeit und Fehlerfreiheit, ohne Tracking oder Analytik.',
+            'rights-heading': '8) Ihre Rechte',
+            'rights-paragraph-1': 'Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerspruch sowie Beschwerde bei einer Aufsichtsbehörde.',
+            'rights-paragraph-2': 'Da Sproutly Ihre Daten lokal speichert, können Sie diese Rechte unmittelbar ausüben, indem Sie die Daten löschen oder die App deinstallieren.',
+            'security-heading': '9) Sicherheit',
+            'security-paragraph-1': 'Es werden keine Daten über das Internet übertragen; alles verbleibt auf Ihrem Gerät.',
+            'security-paragraph-2': 'Aktivieren Sie die Sicherheitsfunktionen Ihres Geräts (Sperrbildschirm, verschlüsselte Backups), um die Informationen zu schützen.',
+            'transfers-heading': '10) Internationale Datentransfers',
+            'transfers-paragraph-1': 'Für die Sproutly-App selbst finden keine internationalen Datentransfers statt.',
+            'transfers-paragraph-2': 'Diese Website wird über GitHub (USA) ausgeliefert; beachten Sie hierzu die oben verlinkte GitHub-Datenschutzerklärung.',
+            'children-heading': '11) Kinder',
+            'children-paragraph-1': 'Die App richtet sich nicht an Kinder unter 16 Jahren; eine wissentlich erfolgende Verarbeitung findet nicht statt.',
+            'changes-heading': '12) Änderungen dieser Datenschutzerklärung',
+            'changes-paragraph-1': 'Wir können diese Datenschutzerklärung bei Bedarf aktualisieren; maßgeblich ist stets die Version auf dieser Seite.',
+            'contact-heading': '13) Kontakt für Datenschutzanfragen',
+            'contact-paragraph-1': 'HammerCoding<br>E-Mail: <a href="mailto:contact.sproutly@gmail.com">contact.sproutly@gmail.com</a>',
+            'footer-brand': 'HammerCoding · Sproutly',
+            'footer-updated': 'Zuletzt aktualisiert: <span data-updated></span>',
+          },
+        };
 
         const safeStorage = {
           get() {
@@ -833,6 +833,31 @@
               /* ignore storage write issues */
             }
           },
+        };
+
+        const applyTranslations = (lang) => {
+          const fallback = translations.en;
+          const dictionary = translations[lang] || fallback;
+          translatableElements.forEach((element) => {
+            const key = element.dataset.i18n;
+            if (!key) {
+              return;
+            }
+            const value = (dictionary && dictionary[key]) ?? fallback[key];
+            if (value !== undefined) {
+              element.innerHTML = value;
+            }
+          });
+        };
+
+        const updateLastUpdated = (lang) => {
+          const updatedNode = document.querySelector('[data-updated]');
+          if (!updatedNode) {
+            return;
+          }
+          const locale = lang === 'de' ? 'de-DE' : 'en-GB';
+          const now = new Date();
+          updatedNode.textContent = now.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' });
         };
 
         const updateUrlParam = (lang) => {
@@ -865,6 +890,9 @@
             );
           });
 
+          applyTranslations(normalized);
+          updateLastUpdated(normalized);
+
           if (options.persist !== false) {
             safeStorage.set(normalized);
             updateUrlParam(normalized);
@@ -896,16 +924,6 @@
         buttons.forEach((btn) => {
           btn.addEventListener('click', () => setLang(btn.dataset.langTarget));
         });
-
-        const updatedDe = document.querySelector('[data-updated="de"]');
-        const updatedEn = document.querySelector('[data-updated="en"]');
-        const now = new Date();
-        if (updatedDe) {
-          updatedDe.textContent = now.toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' });
-        }
-        if (updatedEn) {
-          updatedEn.textContent = now.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
-        }
 
         const logoImage = document.querySelector('.logo-image');
         const fallback = document.querySelector('.logo-fallback');
